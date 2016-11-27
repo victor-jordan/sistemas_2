@@ -23,8 +23,7 @@ class Database {
 	}
 	// Constructor
 	private function __construct() {
-		$this->_connection = new mysqli($this->_host, $this->_username, 
-			$this->_password, $this->_database);
+		$this->_connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
 	
 		// Manejo de errores
 		if (mysqli_connect_errno()) { 
@@ -42,7 +41,9 @@ class Database {
 	}
 
 	public function __destruct() {
-		return $this->_connection->close();
+		if (self::$_instance) {
+			return $this->_connection->close();
+		}
 	}
 }
 ?>

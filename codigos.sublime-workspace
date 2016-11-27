@@ -3,15 +3,171 @@
 	{
 		"selected_items":
 		[
+			[
+				"hea",
+				"header〔function〕"
+			],
+			[
+				"_S",
+				"$_SESSION〔variable〕"
+			],
+			[
+				"pelicula",
+				"$pelicula_id〔variable〕"
+			],
+			[
+				"peli",
+				"$pelicula_id〔variable〕"
+			],
+			[
+				"get",
+				"getElementById〔function〕"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"getE",
+				"getElementsByName〔function〕"
+			],
+			[
+				"inter",
+				"interface〔keyword〕"
+			],
+			[
+				"pe",
+				"pelicula_id"
+			],
+			[
+				"direc",
+				"director"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"dire",
+				"director"
+			],
+			[
+				"data",
+				"datalist	Tag"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"MARG",
+				"margin-bottom"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"form",
+				"formato"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"coll",
+				"collapse〔value〕"
+			],
+			[
+				"a",
+				"separate"
+			],
+			[
+				"sty",
+				"font-style"
+			],
+			[
+				"bor",
+				"border-collapse"
+			],
+			[
+				"met",
+				"meta	Tag"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "codificacion/info.php",
+			"file": "OOP/listado_peliculas.php",
 			"settings":
 			{
-				"buffer_size": 49,
+				"buffer_size": 5171,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "OOP/prueba_login.php",
+			"settings":
+			{
+				"buffer_size": 1435,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "OOP/cl_interfaz.php",
+			"settings":
+			{
+				"buffer_size": 1360,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "OOP/borrar_pelicula.php",
+			"settings":
+			{
+				"buffer_size": 327,
 				"line_ending": "Windows"
 			}
 		}
@@ -69,10 +225,28 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/sistemas_2/codificacion"
+		"/C/xampp/htdocs/sistemas_2",
+		"/C/xampp/htdocs/sistemas_2/OOP"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/sistemas_2/OOP/prueba_login.html",
+		"/C/xampp/htdocs/sistemas_2/OOP/prueba_login.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/cl_login.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/interface_xss.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/cl_pelicula_controlador.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/listado_peliculas.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/cl_base_dato.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/interface_bbdd.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/cl_interfaz.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/borrar_pelicula.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/estilo.css",
+		"/C/xampp/htdocs/sistemas_2/ejemplo_get.php",
+		"/C/xampp/htdocs/sistemas_2/ejemplo_get.html",
+		"/C/xampp/htdocs/sistemas_2/formulario_validacion_completa.php",
+		"/C/xampp/htdocs/sistemas_2/formulario2_xss.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/prueba_oop.php",
+		"/C/xampp/htdocs/sistemas_2/codificacion/info.php",
 		"/C/Users/papa/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/papa/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/papa/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
@@ -95,6 +269,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".$",
+			"this->",
+			"Interfaz",
 			"ignored_",
 			"ignored"
 		],
@@ -104,6 +281,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			".$pelicula::",
+			"self::",
+			"PeliculaControlador"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -119,31 +299,125 @@
 			[
 				{
 					"buffer": 0,
-					"file": "codificacion/info.php",
+					"file": "OOP/listado_peliculas.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 49,
+						"buffer_size": 5171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								49,
-								49
+								1335,
+								1335
 							]
 						],
 						"settings":
 						{
-							"function_name_status_row": 3,
+							"auto_complete": false,
+							"function_name_status_row": 51,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 931.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "OOP/prueba_login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"function_name_status_row": 8,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "OOP/cl_interfaz.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1240,
+								1240
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"function_name_status_row": 43,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 501.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "OOP/borrar_pelicula.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"function_name_status_row": 6,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -188,7 +462,7 @@
 	"project": "codigos.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -222,11 +496,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 215.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

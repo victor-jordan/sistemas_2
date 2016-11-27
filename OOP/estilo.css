@@ -1,0 +1,95 @@
+	body {
+		margin-left: 2%;
+		margin-right: 2%;
+		font-family: sans-serif;
+	}
+
+	form {
+		width: 90%;
+		border: 2px dashed black;
+		background-color: #264473;
+		margin: 0 auto;
+		padding-bottom: 1%;
+	}
+
+	form h5 {
+		font-weight: bolder;
+		margin-bottom: 0px;
+		border-bottom: 1px solid black;
+		background-color: #5F7AA4;
+		text-align: center;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	form div {
+		background-color: #8DA2C5;
+		margin-left: 15%;
+		margin-right: 15%;
+		padding-bottom: 1%;
+		padding-top: 1%; 
+	}
+
+	label, input, select {
+		display: inline-block;
+	}
+
+	label {
+		width: 35%;
+		text-align: right;
+	}
+
+	input {
+		background-color: white;
+		border: 1px solid grey;
+	}
+
+	select {
+		background-color: white;
+		border: 1px solid grey;
+	}
+
+	label + input, label + select {
+	    width: 30%;
+	    margin: 1% 30% 0 2%;
+	}
+
+	input + input {
+	    float: right;
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	table, th, tr, td {
+		border: 1px solid black;
+	}
+
+	thead {
+		background-color: black;
+		color: white;
+		border: 2px solid black;
+	}
+
+	caption{
+		background-color: grey;
+		color: white;
+		font-style: oblique;
+		border: 1px solid black;
+	}
+
+	.error {
+		background-color: red;
+		color: white;
+		margin-left: 15%;
+		margin-right: 15%;	
+	}
+
+	.correcto {
+		background-color: green;
+		color: white;
+		margin-left: 15%;
+		margin-right: 15%;
+	}

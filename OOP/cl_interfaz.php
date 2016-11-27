@@ -11,6 +11,13 @@ class Interfaz extends Database
 		return $res;
 	}
 
+	public static function coleccion($campo) {
+		$seleccion = "select distinct %s from pelicula;";
+		$sentencia = sprintf($seleccion, $campo);
+		$los_datos = parent::getInstance()->getConnection()->query($sentencia);
+		return $los_datos;
+	}
+
 	public function abm($sql) {
 		$exec = parent::getInstance()->getConnection();
 		
@@ -32,8 +39,14 @@ class Interfaz extends Database
 			} else {
 				return $exec->error;
 			}
+		}elseif (strpos($sql, 'call') !== false) {
+			if ($exec->query($sql) == TRUE) {
+				return "La operacion se realizo correctamente.";	
+			} else {
+				return $exec->error;
+			}
 		} else {
-			echo "Operacion no permitida";
+			return "Operacion no permitida";
 		}
 	}
 }
