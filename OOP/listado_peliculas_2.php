@@ -10,14 +10,9 @@
 session_start();
 if (!isset($_SESSION['usuario']))
 {
-	echo $_SESSION['usuario'];
 	header('Refresh: 3; URL = prueba_login.html');
 	exit();
 }
-/**
-* La prueba de la clase
-*/
-
 require('cl_interfaz.php');
 
 $sentencia = "select pelicula_id, titulo, genero, anho, director, formato, precio_alquiler from pelicula;";

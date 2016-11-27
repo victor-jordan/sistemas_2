@@ -6,6 +6,7 @@
 <body>
 <?php
 require('cl_login.php');
+session_start();
 $usuario = $_POST["usuario"];
 $pass = $_POST["pass"];
 
@@ -29,6 +30,7 @@ if ($validado->num_rows > 0) {
 		echo "<b><i>activo:</i></b> ".$fila['activo']."<br>";
 		echo "<hr>";
 		$validado->free();
+		$_SESSION['usuario'] = $usuario;
 		header('Refresh: 2; URL = listado_peliculas.php');
 	} else {
 		echo "Usuario ".$fila['denominacion']." inactivo.<br>";

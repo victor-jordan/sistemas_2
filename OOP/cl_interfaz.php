@@ -41,7 +41,7 @@ class Interfaz extends Database
 			}
 		}elseif (strpos($sql, 'call') !== false) {
 			if ($exec->query($sql) == TRUE) {
-				return "La operacion se realizo correctamente.";	
+				return "La operacion se realizó con éxito.";	
 			} else {
 				return $exec->error;
 			}
