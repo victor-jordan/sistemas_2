@@ -7,32 +7,30 @@
 </head>
 <body>
 <?php
+require('Modelos\cl_usuario.php');
+require('Controladores\cl_interfaz.php');
 session_start();
 if (!isset($_SESSION['usuario']))
 {
-	echo $_SESSION['usuario'];
-	header('Refresh: 3; URL = prueba_login.html');
+	header('Refresh: 0; URL = login.php');
 	exit();
+} else {
+	$usuario = $_SESSION['usuario'];
 }
-/**
-* La prueba de la clase
-*/
-
-require('cl_interfaz.php');
 
 $sentencia = "select pelicula_id, titulo, genero, anho, director, formato, precio_alquiler from pelicula;";
 
 $resultado = Interfaz::consulta($sentencia);
-$directores = Interfaz::coleccion('director');
-$generos = Interfaz::coleccion('genero');
-$formatos = Interfaz::coleccion('formato');
+$directores = Interfaz::coleccion('director', 'pelicula');
+$generos = Interfaz::coleccion('genero', 'pelicula');
+$formatos = Interfaz::coleccion('formato', 'pelicula');
 
 // definir variables para tomar valores del POST
 $pelicula_id = $titulo = $genero = $anho = $director = $formato = $precio = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $pelicula_id = xss_test($_POST["pelicula_id"]);
-  if($pelicula_id !== ''){
+  if($pelicula_id == ''){
   	$pelicula_id = "NULL";
   }
   $titulo = xss_test($_POST["titulo"]);
@@ -49,7 +47,6 @@ function xss_test($dato) {
   $dato = htmlspecialchars($dato);
   return $dato;
 }
-echo $_SESSION['usuario'];
 ?>
 <form id="formulario" method="POST" action="<?php $_SERVER["PHP_SELF"];?>">
 	<h5 id="tform">Agregar películas</h5>

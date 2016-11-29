@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"sess",
+				"session_destroy〔function〕"
+			],
+			[
+				"alquiler",
+				"alquiler_id"
+			],
+			[
+				"cliente",
+				"$cliente_id〔variable〕"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"pel",
+				"peliculas"
+			],
+			[
+				"pelicula",
+				"pelicula_id"
+			],
+			[
+				"pelicul",
+				"pelicula_id"
+			],
+			[
+				"pre",
+				"precio_alquiler"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"get",
+				"getInstance〔function〕"
+			],
+			[
+				"pas",
+				"$password〔variable〕"
+			],
+			[
+				"array",
+				"array〔keyword〕"
+			],
+			[
 				"hea",
 				"header〔function〕"
 			],
@@ -12,16 +64,8 @@
 				"$_SESSION〔variable〕"
 			],
 			[
-				"pelicula",
-				"$pelicula_id〔variable〕"
-			],
-			[
 				"peli",
 				"$pelicula_id〔variable〕"
-			],
-			[
-				"get",
-				"getElementById〔function〕"
 			],
 			[
 				"in",
@@ -139,6 +183,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "OOP/Vistas/login.html",
+			"settings":
+			{
+				"buffer_size": 2135,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -194,19 +246,33 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/sistemas_2",
-		"/C/xampp/htdocs/sistemas_2/OOP"
+		"/C/xampp/htdocs/sistemas_2/OOP",
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores",
+		"/C/xampp/htdocs/sistemas_2/OOP/Modelos",
+		"/C/xampp/htdocs/sistemas_2/OOP/Vistas"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores/cl_interfaz.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/alquileres.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Vistas/login.html",
+		"/C/xampp/htdocs/sistemas_2/OOP/login.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/listado_peliculas.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Modelos/cl_usuario.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores/cl_login.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores/cl_pelicula_controlador_2.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/listado_peliculas_2.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Modelos/cl_pelicula.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores/cl_base_dato.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/Controladores/cl_pelicula_controlador.php",
+		"/C/xampp/htdocs/sistemas_2/OOP/login.html",
 		"/C/xampp/htdocs/sistemas_2/OOP/prueba_login.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/prueba_login.html",
-		"/C/xampp/htdocs/sistemas_2/OOP/listado_peliculas.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/cl_interfaz.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/cl_pelicula_controlador.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/interface_bbdd.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/borrar_pelicula.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/cl_base_dato.php",
-		"/C/xampp/htdocs/sistemas_2/OOP/listado_peliculas_2.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/cl_login.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/interface_xss.php",
 		"/C/xampp/htdocs/sistemas_2/OOP/estilo.css",
@@ -224,7 +290,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -238,6 +304,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modificador_por",
+			"usuario",
+			"protected",
+			"private",
 			".$",
 			"this->",
 			"Interfaz",
@@ -250,6 +320,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"modificado_por",
+			"pelicula",
+			"var",
+			"protected",
 			".$pelicula::",
 			"self::",
 			"PeliculaControlador"
@@ -263,8 +337,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "OOP/Vistas/login.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								66
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": -1,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -307,7 +411,7 @@
 	"project": "codigos.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

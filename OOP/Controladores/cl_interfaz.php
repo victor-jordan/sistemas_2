@@ -11,9 +11,9 @@ class Interfaz extends Database
 		return $res;
 	}
 
-	public static function coleccion($campo) {
-		$seleccion = "select distinct %s from pelicula;";
-		$sentencia = sprintf($seleccion, $campo);
+	public static function coleccion($campo, $tabla) {
+		$seleccion = "select distinct %s from %s;";
+		$sentencia = sprintf($seleccion, $campo, $tabla);
 		$los_datos = parent::getInstance()->getConnection()->query($sentencia);
 		return $los_datos;
 	}
@@ -41,7 +41,7 @@ class Interfaz extends Database
 			}
 		}elseif (strpos($sql, 'call') !== false) {
 			if ($exec->query($sql) == TRUE) {
-				return "La operacion se realizó con éxito.";	
+				return "La operacion se realizó correctamente.";	
 			} else {
 				return $exec->error;
 			}

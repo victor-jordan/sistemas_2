@@ -33,13 +33,6 @@ button {
     width: 100%;
 }
 
-/* Estilo del boton cancelar */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
 /* Centrar la imagen de avatar */
 .imgcontainer {
     text-align: center;
@@ -57,39 +50,45 @@ img.avatar {
     padding: 16px;
 }
 
+.mensaje {
+    width: 100%;
+}
+
 /* Cambiar estilo por pantalla */
 @media screen and (max-width: 300px) {
     span.psw {
         display: block;
         float: none;
     }
-    .cancelbtn {
-        width: 100%;
-    }
 }
 </style>
-	<title>Sistema basico de Login</title>
+	<title>Sistema Basico de Login</title>
 </head>
 <body>
-<!--<form action="prueba_login.php" method="POST">-->
-<form action="prueba_login.php" method="POST">
+<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
   <div class="imgcontainer">
     <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2LsyQzL4G5tyQEBNahy4cn9VdD-tqMyC-78yELWVRmY86sEuH" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label><b>Usuario</b></label>
-    <input type="text" placeholder="El usuario" name="usuario" required>
+    <input type="text" placeholder="El usuario" name="user" required>
 
     <label><b>Contraseña</b></label>
     <input type="password" placeholder="La contraseña" name="pass" required>
         
     <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Recordar
-  </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancelar</button>
+  <div class="container">
+    <?php
+        if ($error){
+            echo "<span class='mensaje' style='background-color: #f44336'>".$error."</span>";
+            exit();
+        } elseif ($usuario){
+            echo "<span class='mensaje' style='background-color: #4CAF50'>Bienvenido ".$_SESSION['usuario']->nombre." ".$_SESSION['usuario']->apellido."</span>";
+            header('Refresh: 2; URL = alquileres.php');
+        }
+    ?>
   </div>
 </form>
 </body>
